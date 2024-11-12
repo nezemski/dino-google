@@ -1,0 +1,56 @@
+.game {
+  width: 600px;
+  height: 200px;
+  border-bottom: 1px solid black;
+  margin: auto;
+}
+
+#dino {
+  width: 50px;
+  height: 50px;
+  background-image: url(img/95971_Dinosaur_Game.webp);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
+
+#cactus {
+  width: 25px;
+  height: 40px;
+  background-image: url(img/1645549045_offline-dinosaur-gam.png);
+  background-size: 20px 40px;
+  position: relative;
+  top: 110px;
+  left: 560px;
+  animation: cactusMov 3s infinite linear;
+}
+@keyframes cactusMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+.jump {
+  animation: jumpMov 0.5s linear;
+}
+
+@keyframes jumpMov {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 125px;
+  }
+  50% {
+    top: 80px;
+  }
+  80% {
+    top: 125px;
+  }
+  100% {
+    top: 150px;
+  }
+}
